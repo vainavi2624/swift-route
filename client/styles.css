@@ -1,0 +1,195 @@
+/* Add more styles to match the Google Maps-like appearance */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4285F4;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.map-container {
+    height: 70vh;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.button-container,
+.distance-container {
+    margin-top: 1rem;
+}
+
+.form-control {
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #4285F4;
+    border-color: #4285F4;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #3367D6;
+    border-color: #3367D6;
+}
+
+.edge-label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #494747;
+}
+
+.green-line {
+    color: green;
+}
+
+.yellow-line {
+    color: yellow;
+}
+
+.red-line {
+    color: red;
+}
+
+.leaflet-tile-container {
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.leaflet-container {
+    background-color: #f0f0f0;
+}
+
+.leaflet-polyline {
+    stroke-width: 3px;
+    stroke-dasharray: 5, 5;
+}
+
+.point-icon {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+/* .edge-line {
+    color: #cccccc;
+    weight: 1;
+    dashArray: '5, 5';
+} */
+
+.btn {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dropdown:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-item {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 0;
+    list-style: none;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu li {
+    clear: both;
+    white-space: nowrap;
+    padding: 3px 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #666;
+}
+
+.dropdown-menu li a:active {
+    color: #333;
+    background-color: #ccc;
+}
+
+.dropdown-menu li a:visited {
+    color: #666;
+}
+
+.dropdown-menu li a:visited:hover {
+    color: #333;
+}
+
+.dropdown-menu li a:visited:active {
+    color: #666;
+    background-color: #ccc;
+}

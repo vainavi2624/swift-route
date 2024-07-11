@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift - Your Own Route Planner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1 class="font-roboto">Swift</h1>
+        <p>Your Own Route Planner</p>
+    </header>
+    <div class="container my-4">
+        <div id="map" class="map-container"></div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div id="button-container" class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <select id="start-point" class="form-control" onchange="updateSelection()">
+                                <option value="">Select Start Point</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="end-point" class="form-control" onchange="updateSelection()">
+                                <option value="">Select End Point</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <button id="plan-route" class="btn btn-primary btn-block">Plan My Route</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="distance-container" class="col-md-12 text-center" style="display: none;">
+                    <p id="distance-text" class="my-3">Shortest path distance: N/A</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
